@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { InputBox } from "./components";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
+import Footer from "./Footer";
 
 function App() {
   const [amount, setAmount] = useState(0);
@@ -32,7 +33,7 @@ function App() {
     >
       <div className="m-0 p-0">
         <h1 className="text-white font-bold text-[25px] text-4xl  flex justify-center items-center">
-          Currency Converter App
+          Foreign Currency Converter App
         </h1>
       </div>
       <div className="w-full">
@@ -81,6 +82,7 @@ function App() {
           </form>
         </div>
       </div>
+      <Footer />;
     </div>
   );
 }
